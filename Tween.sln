@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tween", "src\Tween.csproj", "{8F45D898-BE78-4F00-AA57-A8D2F9670379}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plot", "example\Plot\Plot.csproj", "{A66F249F-CF2F-41C0-998E-0E37D4345081}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F45D898-BE78-4F00-AA57-A8D2F9670379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F45D898-BE78-4F00-AA57-A8D2F9670379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F45D898-BE78-4F00-AA57-A8D2F9670379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F45D898-BE78-4F00-AA57-A8D2F9670379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A66F249F-CF2F-41C0-998E-0E37D4345081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A66F249F-CF2F-41C0-998E-0E37D4345081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A66F249F-CF2F-41C0-998E-0E37D4345081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A66F249F-CF2F-41C0-998E-0E37D4345081}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
