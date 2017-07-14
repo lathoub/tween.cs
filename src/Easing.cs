@@ -48,10 +48,10 @@ namespace Tween
             {
                 if ((k *= 2) < 1)
                 {
-                    return 0.5f * k * k;
+                    return 0.5 * k * k;
                 }
 
-                return -0.5f * (--k * (k - 2) - 1);
+                return -0.5 * (--k * (k - 2) - 1);
             }
         }
 
@@ -86,10 +86,10 @@ namespace Tween
             {
                 if ((k *= 2) < 1)
                 {
-                    return 0.5f * k * k * k;
+                    return 0.5 * k * k * k;
                 }
 
-                return 0.5f * ((k -= 2) * k * k + 2);
+                return 0.5 * ((k -= 2) * k * k + 2);
             }
         }
 
@@ -124,10 +124,10 @@ namespace Tween
             {
                 if ((k *= 2) < 1)
                 {
-                    return 0.5f * k * k * k * k;
+                    return 0.5 * k * k * k * k;
                 }
 
-                return -0.5f * ((k -= 2) * k * k * k - 2);
+                return -0.5 * ((k -= 2) * k * k * k - 2);
             }
         }
 
@@ -162,10 +162,10 @@ namespace Tween
             {
                 if ((k *= 2) < 1)
                 {
-                    return 0.5f * k * k * k * k * k;
+                    return 0.5 * k * k * k * k * k;
                 }
 
-                return 0.5f * ((k -= 2) * k * k * k * k + 2);
+                return 0.5 * ((k -= 2) * k * k * k * k + 2);
             }
         }
 
@@ -198,7 +198,7 @@ namespace Tween
             /// <returns></returns>
             public static double InOut(double k)
             {
-                return 0.5f * (1 - Math.Cos(Math.PI * k));
+                return 0.5 * (1 - Math.Cos(Math.PI * k));
             }
         }
 
@@ -243,10 +243,10 @@ namespace Tween
 
                 if ((k *= 2) < 1)
                 {
-                    return 0.5f * Math.Pow(1024, k - 1);
+                    return 0.5 * Math.Pow(1024, k - 1);
                 }
 
-                return 0.5f * (-Math.Pow(2, -10 * (k - 1)) + 2);
+                return 0.5 * (-Math.Pow(2, -10 * (k - 1)) + 2);
             }
         }
 
@@ -281,10 +281,10 @@ namespace Tween
             {
                 if ((k *= 2) < 1)
                 {
-                    return -0.5f * (Math.Sqrt(1 - k * k) - 1);
+                    return -0.5 * (Math.Sqrt(1 - k * k) - 1);
                 }
 
-                return 0.5f * (Math.Sqrt(1 - (k -= 2) * k) + 1);
+                return 0.5 * (Math.Sqrt(1 - (k -= 2) * k) + 1);
             }
         }
 
@@ -307,7 +307,7 @@ namespace Tween
                     return 1;
                 }
 
-                return -Math.Pow(2.0f, 10.0f * (k - 1)) * Math.Sin((k - 1.1f) * 5.0f * Math.PI);
+                return -Math.Pow(2.0, 10.0 * (k - 1)) * Math.Sin((k - 1.1) * 5.0 * Math.PI);
             }
 
             /// <summary>
@@ -351,10 +351,10 @@ namespace Tween
 
                 if (k < 1)
                 {
-                    return -0.5f * Math.Pow(2, 10 * (k - 1)) * Math.Sin((k - 1.1) * 5 * Math.PI);
+                    return -0.5 * Math.Pow(2, 10 * (k - 1)) * Math.Sin((k - 1.1) * 5 * Math.PI);
                 }
 
-                return 0.5f * Math.Pow(2, -10 * (k - 1)) * Math.Sin((k - 1.1) * 5 * Math.PI) + 1;
+                return 0.5 * Math.Pow(2, -10 * (k - 1)) * Math.Sin((k - 1.1) * 5 * Math.PI) + 1;
             }
         }
 
@@ -367,7 +367,7 @@ namespace Tween
             /// <returns></returns>
             public static double In(double k)
             {
-                const double s = 1.70158f;
+                const double s = 1.70158;
 
                 return k * k * ((s + 1) * k - s);
             }
@@ -379,7 +379,7 @@ namespace Tween
             /// <returns></returns>
             public static double Out(double k)
             {
-                const double s = 1.70158f;
+                const double s = 1.70158;
 
                 return --k * k * ((s + 1) * k + s) + 1;
             }
@@ -391,14 +391,14 @@ namespace Tween
             /// <returns></returns>
             public static double InOut(double k)
             {
-                const double s = 1.70158f * 1.525f;
+                const double s = 1.70158 * 1.525;
 
                 if ((k *= 2) < 1)
                 {
-                    return 0.5f * (k * k * ((s + 1) * k - s));
+                    return 0.5 * (k * k * ((s + 1) * k - s));
                 }
 
-                return 0.5f * ((k -= 2) * k * ((s + 1) * k + s) + 2);
+                return 0.5 * ((k -= 2) * k * ((s + 1) * k + s) + 2);
             }
         }
 
@@ -421,21 +421,21 @@ namespace Tween
             /// <returns></returns>
             public static double Out(double k)
             {
-                if (k < (1 / 2.75f))
+                if (k < (1 / 2.75))
                 {
-                    return 7.5625f * k * k;
+                    return 7.5625 * k * k;
                 }
                 else if (k < (2 / 2.75f))
                 {
-                    return 7.5625f * (k -= (1.5f / 2.75f)) * k + 0.75f;
+                    return 7.5625 * (k -= (1.5 / 2.75)) * k + 0.75;
                 }
-                else if (k < (2.5 / 2.75f))
+                else if (k < (2.5 / 2.75))
                 {
-                    return 7.5625f * (k -= (2.25f / 2.75f)) * k + 0.9375f;
+                    return 7.5625 * (k -= (2.25 / 2.75)) * k + 0.9375;
                 }
                 else
                 {
-                    return 7.5625f * (k -= (2.625f / 2.75f)) * k + 0.984375f;
+                    return 7.5625 * (k -= (2.625 / 2.75)) * k + 0.984375;
                 }
             }
 
@@ -448,10 +448,10 @@ namespace Tween
             {
                 if (k < 0.5)
                 {
-                    return In(k * 2) * 0.5f;
+                    return In(k * 2) * 0.5;
                 }
 
-                return Out(k * 2 - 1) * 0.5f + 0.5f;
+                return Out(k * 2 - 1) * 0.5 + 0.5;
             }
         }
     }
